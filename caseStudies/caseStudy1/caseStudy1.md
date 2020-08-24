@@ -15,4 +15,4 @@
 
 
 
-Go back to [Case studies]({{ '/caseStudies' | absolute_url }}) Page
+Go back to [Case studies]({{ '/caseStudies' | absolute_url }})
