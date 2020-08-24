@@ -12,15 +12,14 @@ layout: default
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Year', 'No. of items'],
+          ['Imprint date', 'No. of items'],
           [ 1603,      1],
           [ 1670,      1]
         ]);
 
         var options = {
-          title: 'Collection distribution according to date of imprint',
-          hAxis: {title: 'Year', minValue: 1600, maxValue: 1900},
-		  vAxis: {title: 'No. of items', minValue: 0, maxValue: 300},
+          hAxis: {title: 'Imprint date', minValue: 1600, maxValue: 1900},
+	  vAxis: {title: 'No. of items', minValue: 0, maxValue: 300},
           legend: 'none'
         };
 
