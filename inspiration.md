@@ -2,3 +2,4 @@ To give credit where credit is due, the concept of the data playground as place 
 
 * Library of Congress Labs ([Check it out](https://labs.loc.gov/)) 
 * Carneguie Hall Data Lab ([Check it out](https://carnegiehall.github.io/datalab/))
+* MetaLAB (at) Harvard ([Check it out](https://metalabharvard.github.io/))
