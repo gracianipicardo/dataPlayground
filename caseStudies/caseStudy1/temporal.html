@@ -244,8 +244,11 @@ layout: default
 
         var options = {
           hAxis: {title: 'Printing date', minValue: 1600, maxValue: 1900},
-		  vAxis: {title: 'No. of items', minValue: 0, maxValue: 300},
-          legend: 'none'
+	  vAxis: {title: 'No. of items', minValue: 0, maxValue: 300},
+          legend: 'none',
+	  colors: ['#C71585'],
+    	  pointShape: 'triangle',
+    	  pointSize: 7,
         };
 
         var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
