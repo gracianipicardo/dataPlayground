@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
+    <script type='text/javascript'>
+     google.charts.load('current', {
+       'packages': ['geochart'],
+       // Note: you will need to get a mapsApiKey for your project.
+       // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+       'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+     });
+     google.charts.setOnLoadCallback(drawMarkersMap);
+
+      function drawMarkersMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['Latitude', 'Longitud', 'Place', 'No. of items'],
+        [40.4000,   -3.6833, 'Madrid',  3],
+		[41.3984,   2.1741, 'Barcelona',  2],
+		[39.4667,   -0.3667, 'Valencia',  1]
+      ]);
+
+      var options = {
+        region: 'ES',
+        displayMode: 'markers',
+        colorAxis: {colors: ['pink', 'blue']}
+      };
+
+      var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    };
+    </script>
+  </head>
+  <body>
+	<h1>1600s</h1>
+	<h3>The Texas Collection of Comedias Sueltas and Spanish Theater Database</h3>
+	<p><i>(No. of items printed in the 1600s without place of publication available: 11)</i></p>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
